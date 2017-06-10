@@ -75,8 +75,26 @@ namespace gra_dopasywowanie
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                clickedLabel.ForeColor = Color.Black;
+                
+                //Jeśli first Clicked jest null, to jest to pierwsza ikona z pary,
+                //która gracz kliknął, więc ustalamy etykietę firstClicked,
+                //która gracz kliknął, zmieniamy kolor na czarny i zwracamy  
+                if (firstClicked == null)
+                {
+                    firstClicked = clickedLabel;
+                    firstClicked.ForeColor = Color.Black;
+
+                    return;
+                }
+
             }
         }
+
+       //dodajemy etykiety odwołania
+
+        Label firstClicked = null;
+
+       
+        Label secondClicked = null;
     }
 }
