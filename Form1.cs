@@ -45,14 +45,38 @@ namespace gra_dopasywowanie
                     iconLabel.Text = icons[randomNumber];
                     // iconLabel.ForeColor = iconLabel.BackColor;
                     icons.RemoveAt(randomNumber);
+                    //poniższe polecenie 'zakrywa' ikony na tablicy
+                    iconLabel.ForeColor = iconLabel.BackColor;
                 }
             }
+
+
         }
 
-        public Form1()
+        
+
+    public Form1()
         {
             InitializeComponent();
             PrzypisanieIkondoKwadratow();
+        }
+        //Umożliwia odkrywanie kwadratów na zakrytej tablicy
+        private void label_click(object sender, EventArgs e)
+        {
+            Label clickedLabel = sender as Label;
+
+            if (clickedLabel != null)
+            {
+
+                //Jeśli kliknięta etykieta jest czarna, to oznacza,
+                //że ów ikona była już odkryta wcześniej
+                //zignoruj klikniecie
+
+                if (clickedLabel.ForeColor == Color.Black)
+                    return;
+
+                clickedLabel.ForeColor = Color.Black;
+            }
         }
     }
 }

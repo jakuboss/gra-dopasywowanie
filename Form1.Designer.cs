@@ -126,6 +126,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "c";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label_click);
             // 
             // label2
             // 
@@ -138,6 +139,7 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "c";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label_click);
             // 
             // label3
             // 
@@ -162,6 +164,7 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "c";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label_click);
             // 
             // label5
             // 
@@ -174,6 +177,7 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "c";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label_click);
             // 
             // label6
             // 
@@ -186,6 +190,7 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "c";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label_click);
             // 
             // label7
             // 
@@ -198,6 +203,7 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "c";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.Click += new System.EventHandler(this.label_click);
             // 
             // label8
             // 
@@ -210,6 +216,7 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "c";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.Click += new System.EventHandler(this.label_click);
             // 
             // label9
             // 
@@ -222,6 +229,7 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "c";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Click += new System.EventHandler(this.label_click);
             // 
             // label10
             // 
@@ -234,6 +242,7 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "c";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Click += new System.EventHandler(this.label_click);
             // 
             // label11
             // 
@@ -246,6 +255,7 @@
             this.label11.TabIndex = 10;
             this.label11.Text = "c";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.Click += new System.EventHandler(this.label_click);
             // 
             // label12
             // 
@@ -258,6 +268,7 @@
             this.label12.TabIndex = 11;
             this.label12.Text = "c";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label12.Click += new System.EventHandler(this.label_click);
             // 
             // label13
             // 
@@ -270,6 +281,7 @@
             this.label13.TabIndex = 12;
             this.label13.Text = "c";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label13.Click += new System.EventHandler(this.label_click);
             // 
             // label14
             // 
@@ -282,6 +294,7 @@
             this.label14.TabIndex = 13;
             this.label14.Text = "c";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label14.Click += new System.EventHandler(this.label_click);
             // 
             // label15
             // 
@@ -294,6 +307,7 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "c";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label15.Click += new System.EventHandler(this.label_click);
             // 
             // label16
             // 
@@ -306,6 +320,7 @@
             this.label16.TabIndex = 15;
             this.label16.Text = "c";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label16.Click += new System.EventHandler(this.label_click);
             // 
             // label17
             // 
@@ -318,6 +333,7 @@
             this.label17.TabIndex = 16;
             this.label17.Text = "c";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label17.Click += new System.EventHandler(this.label_click);
             // 
             // label18
             // 
@@ -330,6 +346,7 @@
             this.label18.TabIndex = 17;
             this.label18.Text = "c";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.Click += new System.EventHandler(this.label_click);
             // 
             // label19
             // 
@@ -342,6 +359,7 @@
             this.label19.TabIndex = 18;
             this.label19.Text = "c";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label19.Click += new System.EventHandler(this.label_click);
             // 
             // label20
             // 
@@ -354,6 +372,7 @@
             this.label20.TabIndex = 19;
             this.label20.Text = "c";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label20.Click += new System.EventHandler(this.label_click);
             // 
             // label21
             // 
@@ -366,6 +385,7 @@
             this.label21.TabIndex = 20;
             this.label21.Text = "c";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label21.Click += new System.EventHandler(this.label_click);
             // 
             // label22
             // 
@@ -378,6 +398,7 @@
             this.label22.TabIndex = 21;
             this.label22.Text = "c";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label22.Click += new System.EventHandler(this.label_click);
             // 
             // label23
             // 
@@ -390,6 +411,7 @@
             this.label23.TabIndex = 22;
             this.label23.Text = "c";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label23.Click += new System.EventHandler(this.label_click);
             // 
             // label24
             // 
@@ -402,6 +424,7 @@
             this.label24.TabIndex = 23;
             this.label24.Text = "c";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label24.Click += new System.EventHandler(this.label_click);
             // 
             // label25
             // 
@@ -414,6 +437,7 @@
             this.label25.TabIndex = 24;
             this.label25.Text = "c";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label25.Click += new System.EventHandler(this.label_click);
             // 
             // label26
             // 
@@ -426,6 +450,7 @@
             this.label26.TabIndex = 25;
             this.label26.Text = "c";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label26.Click += new System.EventHandler(this.label_click);
             // 
             // label27
             // 
@@ -438,6 +463,7 @@
             this.label27.TabIndex = 26;
             this.label27.Text = "c";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label27.Click += new System.EventHandler(this.label_click);
             // 
             // label28
             // 
@@ -450,6 +476,7 @@
             this.label28.TabIndex = 27;
             this.label28.Text = "c";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label28.Click += new System.EventHandler(this.label_click);
             // 
             // label29
             // 
@@ -462,6 +489,7 @@
             this.label29.TabIndex = 28;
             this.label29.Text = "c";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label29.Click += new System.EventHandler(this.label_click);
             // 
             // label30
             // 
@@ -474,6 +502,7 @@
             this.label30.TabIndex = 29;
             this.label30.Text = "c";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label30.Click += new System.EventHandler(this.label_click);
             // 
             // Form1
             // 
