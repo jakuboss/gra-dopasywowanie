@@ -23,12 +23,32 @@ namespace gra_dopasywowanie
         {
             "!", "!", "N", "N", ",", ",", "k", "k","Q","Q",
             "b", "b", "v", "v", "w", "w", "z", "z","I","I",
-            "P", "P", "Z", "Z", "l", "l", "h", "h","y","y"
+            "P", "P", "Z", "Z", "l", "l", "h", "h","y","y",
         };
 
-        
-        
-       ///Przypisujemy każdą ikone z listy ikon do losowego kwadratu
+        //informajca o wygranej
+
+        private void CheckForWinner()
+        {
+            
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                Label iconLabel = control as Label;
+
+                if (iconLabel != null)
+                {
+                    if (iconLabel.ForeColor == iconLabel.BackColor)
+                        return;
+                }
+            }
+
+            
+            MessageBox.Show("Odkryłeś wszystkie ikony !", "Gratulacje!!!");
+            Close();
+        }
+
+
+        ///Przypisujemy każdą ikone z listy ikon do losowego kwadratu
         private void PrzypisanieIkondoKwadratow()
         {
             
@@ -106,7 +126,9 @@ namespace gra_dopasywowanie
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
-                 
+                //sprawdzamy czy gracz wygrał
+                CheckForWinner();
+
                 //Jeśl gracz kliknął dwie identyczne ikony, 
                 //zachowaj je jako czarne i zrestartuj firstClicked i secondClicked
                 //gracz może teraz kliknąć inną ikonę
