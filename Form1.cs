@@ -106,13 +106,21 @@ namespace gra_dopasywowanie
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                 
+                //Jeśl gracz kliknął dwie identyczne ikony, 
+                //zachowaj je jako czarne i zrestartuj firstClicked i secondClicked
+                //gracz może teraz kliknąć inną ikonę
+
+                if (firstClicked.Text == secondClicked.Text)
+                {
+                    firstClicked = null;
+                    secondClicked = null;
+                    return;
+                }
+
                 //Jeśli gracz kliknął w ten sposób to oznacza, że
                 //kliknął 2 różne ikony , więc czasomierz zaczyna działać
-                
+
                 timer1.Start();
 
             }
