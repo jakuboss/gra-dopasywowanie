@@ -63,7 +63,18 @@ namespace gra_dopasywowanie
         //Umożliwia odkrywanie kwadratów na zakrytej tablicy
         private void label_click(object sender, EventArgs e)
         {
+            
+            //Czasomierz działa tylko w typadku 
+            //dwóch niepasujących do siebie ikon
+            //wyświetla je przez pewien czas 
+            //ignorując każde inne kliknięcie 
+            //w czasie działania czasomierza
+            if (timer1.Enabled == true)
+                return;
+
             Label clickedLabel = sender as Label;
+
+            
 
             if (clickedLabel != null)
             {
@@ -87,6 +98,23 @@ namespace gra_dopasywowanie
                     return;
                 }
 
+                
+                //Po pierwszym kliknięciu czasomierz nie działa
+                //i firstClicked nie jest null
+                //więc musi być to ta sama ikona, która gracz kliknął
+                //Wstawia tam czarny kolor
+                secondClicked = clickedLabel;
+                secondClicked.ForeColor = Color.Black;
+
+                // If the player gets this far, the player 
+                // clicked two different icons, so start the 
+                // timer (which will wait three quarters of 
+                // a second, and then hide the icons)
+                //Jeśli gracz kliknął w ten sposób to oznacza, że
+                //kliknął 2 różne ikony , więc czasomierz zaczyna działać
+                
+                timer1.Start();
+
             }
         }
 
@@ -96,5 +124,21 @@ namespace gra_dopasywowanie
 
        
         Label secondClicked = null;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // Zatrzymaj czasomierz
+            timer1.Stop();
+
+            // Schowaj ikony 
+            firstClicked.ForeColor = firstClicked.BackColor;
+            secondClicked.ForeColor = secondClicked.BackColor;
+
+            // Zrestartuj firstClicked i secondClicked 
+            // wiec następnym razem kiedy etykieta zostanie 
+            // kliknięta, program będzie wiedział, że to pierwsze kliknięcie
+            firstClicked = null;
+            secondClicked = null;
+        }
     }
 }
